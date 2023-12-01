@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #202124; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.ProfileController">
+   <children>
+      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" style="-fx-background-radius: 10;" styleClass="scroll_pane" stylesheets="@styles.css">
+         <content>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="900.0" style="-fx-background-radius: 10;" stylesheets="@styles.css">
+               <children>
+                  <ImageView fx:id="displayUrl" fitHeight="270.0" fitWidth="270.0" layoutX="499.0" layoutY="42.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@images/add1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="104.0" layoutY="237.0" prefHeight="31.0" prefWidth="194.0" text="Contribution :" textFill="#65eef5">
+                     <font>
+                        <Font name="Consolas" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="conNumber" layoutX="305.0" layoutY="239.0" text="+7" textFill="#008018">
+                     <font>
+                        <Font name="Consolas Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="displayName" layoutX="104.0" layoutY="147.0" prefHeight="31.0" prefWidth="406.0" text="Full Name" textFill="WHITE">
+                     <font>
+                        <Font name="Consolas" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="username" layoutX="104.0" layoutY="84.0" text="User Name" textFill="#65eef5">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="editProfile" layoutX="590.0" layoutY="323.0" mnemonicParsing="false" onAction="#updateInfo" prefHeight="26.0" prefWidth="94.0" styleClass="default_button" stylesheets="@styles.css" text="Edit Profile" />
+                  <AnchorPane layoutX="801.0" layoutY="33.0" prefHeight="306.0" prefWidth="68.0" style="-fx-background-color: #18191a; -fx-background-radius: 30; -fx-border-color: #65eef5; -fx-border-radius: 30;">
+                     <children>
+                        <ImageView fx:id="EmailIcon" fitHeight="27.0" fitWidth="26.0" layoutX="22.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/email.1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="LnIcon" fitHeight="27.0" fitWidth="26.0" layoutX="22.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/linkedin.b.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="ghIcon" fitHeight="27.0" fitWidth="26.0" layoutX="22.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/github.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="cFicon" fitHeight="27.0" fitWidth="26.0" layoutX="22.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/cf.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="CcIcon" fitHeight="27.0" fitWidth="26.0" layoutX="22.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/codechef.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="addFrnd" layoutX="104.0" layoutY="188.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" styleClass="default_button" stylesheets="@styles.css" text="Add Friend" />
+                  <Button fx:id="FrndReq" layoutX="228.0" layoutY="188.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" styleClass="default_button" stylesheets="@styles.css" text="Requests" />
+                  <Button fx:id="AddAdmin" layoutX="354.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" styleClass="default_button" stylesheets="@styles.css" text="New Admin" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

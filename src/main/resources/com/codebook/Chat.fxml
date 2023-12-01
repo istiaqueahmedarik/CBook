@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="900.0" style="-fx-background-color: #0e0e0e; -fx-background-radius: 10;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.Chat">
+   <children>
+      <TextArea fx:id="inputChat" layoutX="18.0" layoutY="617.0" prefHeight="38.0" prefWidth="803.0" styleClass="normal_box2" stylesheets="@styles.css">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></TextArea>
+      <ScrollPane fx:id="otherChat" layoutX="18.0" layoutY="11.0" prefHeight="600.0" prefWidth="864.0" style="-fx-background-color: #222327; -fx-background-radius: 10;" styleClass="scroll_pane">
+         <content>
+            <AnchorPane prefHeight="598.0" prefWidth="859.0">
+               <children>
+                  <VBox fx:id="messageBox" layoutX="14.0" layoutY="14.0" prefHeight="1.0" prefWidth="382.0" spacing="10.0" />
+                  <VBox fx:id="messageBox1" alignment="TOP_RIGHT" layoutX="456.0" layoutY="14.0" prefHeight="0.0" prefWidth="395.0" spacing="10.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="sendButton" layoutX="830.0" layoutY="622.0" mnemonicParsing="false" onAction="#send" prefHeight="26.0" prefWidth="48.0" styleClass="default_button" stylesheets="@styles.css" text="Send">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

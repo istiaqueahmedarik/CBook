@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="325.0" style="-fx-background-color: #222327; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.FriendReq">
+   <children>
+      <ImageView fx:id="UserImage" fitHeight="53.0" fitWidth="57.0" layoutX="4.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/add1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="IdToken" layoutX="62.0" layoutY="31.0" prefHeight="22.0" prefWidth="183.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="Accept" layoutX="252.0" layoutY="7.0" mnemonicParsing="false" styleClass="update_button" stylesheets="@styles.css" text="Accept" />
+      <Button fx:id="Reject" layoutX="254.0" layoutY="38.0" mnemonicParsing="false" styleClass="delete-button" stylesheets="@styles.css" text="Reject" />
+   </children>
+</AnchorPane>

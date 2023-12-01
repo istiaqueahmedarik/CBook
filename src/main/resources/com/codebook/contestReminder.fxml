@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="134.0" prefWidth="900.0" styleClass="normal_box2" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.SingleContestPost">
+   <children>
+      <Hyperlink fx:id="link" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="134.0" prefWidth="900.0">
+         <graphic>
+            <AnchorPane prefHeight="128.0" prefWidth="634.0">
+               <children>
+                  <ImageView fx:id="contest_image" fitHeight="127.0" fitWidth="280.0" layoutX="6.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="contest_name" layoutX="299.0" layoutY="21.0" prefHeight="36.0" prefWidth="588.0" text="Label" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date" layoutX="299.0" layoutY="57.0" mnemonicParsing="true" prefHeight="27.0" prefWidth="584.0" text="Label" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="duration" layoutX="299.0" layoutY="84.0" mnemonicParsing="true" prefHeight="27.0" prefWidth="594.0" text="Label" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Hyperlink>
+   </children>
+</AnchorPane>

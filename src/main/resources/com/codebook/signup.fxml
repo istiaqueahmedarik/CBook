@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="814.0" prefWidth="1535.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.SignUpController">
+   <children>
+      <ImageView fitHeight="814.0" fitWidth="1545.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/bg1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-3.0" prefHeight="400.0" prefWidth="279.0" style="-fx-background-color: transparent;" />
+      <AnchorPane layoutX="501.5" layoutY="107.0" prefHeight="575.0" prefWidth="532.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #111c1c 0% , #1e6a64 50%, #020605 100%); -fx-background-radius: 14;">
+         <children>
+            <Label layoutX="67.0" layoutY="70.0" prefHeight="42.0" prefWidth="233.0" text="Hello There," textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="123.0" prefHeight="27.0" prefWidth="399.0" text="Register now to explore more" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </Label>
+            <Button defaultButton="true" layoutX="64.0" layoutY="432.0" mnemonicParsing="false" onAction="#signup" prefHeight="40.0" prefWidth="404.0" styleClass="default_button" stylesheets="@styles.css" text="Register" textFill="#1903e7">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Label layoutX="174.0" layoutY="482.0" text="Already have a account?" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="340.0" layoutY="478.0" onMouseClicked="#login" prefHeight="26.0" prefWidth="49.0" text="Log in" textFill="#0116fc" underline="true" wrapText="true">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <PasswordField fx:id="RepeatPass" layoutX="64.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="404.0" promptText="Repeat Password" />
+            <TextField fx:id="Name" layoutX="64.0" layoutY="179.0" prefHeight="34.0" prefWidth="404.0" promptText="Name" styleClass="username_pass_text_area" stylesheets="@styles.css" />
+            <TextField fx:id="Username" layoutX="64.0" layoutY="231.0" prefHeight="34.0" prefWidth="404.0" promptText="Username" styleClass="username_pass_text_area" stylesheets="@styles.css" />
+            <TextField fx:id="Email" layoutX="64.0" layoutY="283.0" prefHeight="34.0" prefWidth="404.0" promptText="Email" styleClass="username_pass_text_area" stylesheets="@styles.css" />
+            <PasswordField fx:id="Password" layoutX="64.0" layoutY="333.0" prefHeight="34.0" prefWidth="404.0" promptText="Password" />
+            <StackPane fx:id="stackPane" layoutX="225.0" layoutY="507.0" prefHeight="66.0" prefWidth="82.0" />
+            <Label fx:id="warning" alignment="CENTER" layoutX="80.0" layoutY="510.0" prefHeight="54.0" prefWidth="388.0" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

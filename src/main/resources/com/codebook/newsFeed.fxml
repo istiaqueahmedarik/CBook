@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1473.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.PostController">
+   <top>
+      <AnchorPane prefHeight="78.0" prefWidth="1474.0" style="-fx-background-color: #000;" styleClass="NewsFeedUp" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="56.0" layoutX="28.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            <Button cache="true" contentDisplay="RIGHT" layoutX="1342.0" layoutY="17.0" prefHeight="59.0" prefWidth="72.0" styleClass="ButtonProfile" stylesheets="@styles.css" wrapText="true">
+               <font>
+                  <Font name="Webdings" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="42.0" fitWidth="47.0" layoutX="1088.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" styleClass="shopping">
+               <image>
+                  <Image url="@images/shopping-cart.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="618.0" prefWidth="290.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="201.0" styleClass="Button" stylesheets="@styles.css" text="Create New Post">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="87.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="20.0" layoutY="20.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="201.0" styleClass="Button" stylesheets="@styles.css" text="My Post">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="20.0" layoutY="74.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="201.0" styleClass="Button" stylesheets="@styles.css" text="Q&amp;A ">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="20.0" layoutY="128.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="201.0" styleClass="Button" stylesheets="@styles.css" text="CP Resources ">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="20.0" layoutY="181.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="201.0" styleClass="Button" stylesheets="@styles.css" text="Ranking">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="20.0" layoutY="235.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="201.0" styleClass="Button" stylesheets="@styles.css" text="Contest Reminder">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="20.0" layoutY="288.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="201.0" style="-fx-text-fill: red;" styleClass="Button" stylesheets="@styles.css" text="Sign Out" textFill="#d11d1d">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding></VBox>
+   </left>
+   <center>
+      <ScrollPane prefHeight="499.0" prefWidth="1097.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="post" alignment="CENTER" prefHeight="278.0" prefWidth="965.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+   <right>
+      <VBox prefHeight="618.0" prefWidth="222.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

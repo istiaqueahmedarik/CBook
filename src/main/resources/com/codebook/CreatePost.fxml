@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="900.0" style="-fx-background-color: #18191a; -fx-text-fill: white; -fx-border-radius: 10px; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.CreatePost">
+   <children>
+      <AnchorPane layoutX="123.0" layoutY="46.0" prefHeight="501.0" prefWidth="657.0" style="-fx-background-color: #242526; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #65eef5;">
+         <children>
+            <TextField fx:id="title" layoutX="63.5" layoutY="95.0" prefHeight="31.0" prefWidth="527.0" promptText="Post title" styleClass="CreatePostLabelTextField" stylesheets="@styles.css" />
+            <Label alignment="TOP_LEFT" contentDisplay="BOTTOM" layoutX="64.0" layoutY="62.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="19.0" prefWidth="363.0" style="-fx-background-color: transparent;" styleClass="CreatePostLabel" stylesheets="@styles.css" text="Title" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="-1.0" layoutY="27.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="657.0" style="-fx-background-color: transparent;" styleClass="CreatePostLabel" stylesheets="@styles.css" text="Create Post" textAlignment="CENTER" textFill="#65eef5">
+               <font>
+                  <Font name="Consolas Bold" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="addPost" layoutX="227.5" layoutY="375.0" mnemonicParsing="false" onAction="#createPost" prefHeight="40.0" prefWidth="190.0" style="-fx-font-weight: lighter;" styleClass="default_button" stylesheets="@styles.css" text="Verify and Submit">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextArea fx:id="input" layoutX="332.0" layoutY="181.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="99.0" prefWidth="258.5" promptText="Input" styleClass="CreatePostLabelTextField" stylesheets="@styles.css" />
+            <ChoiceBox fx:id="languageSelector" layoutX="63.5" layoutY="325.0" prefHeight="31.0" prefWidth="527.0" styleClass="CreatePostLabelTextField" stylesheets="@styles.css" />
+            <Label contentDisplay="RIGHT" layoutX="332.0" layoutY="144.0" prefHeight="31.0" prefWidth="234.0" style="-fx-background-color: transparent;" styleClass="CreatePostLabel" stylesheets="@styles.css" text="Input" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="code" layoutX="63.5" layoutY="181.0" prefHeight="99.0" prefWidth="258.5" promptText="Your code" styleClass="CreatePostLabelTextField" stylesheets="@styles.css" />
+            <Label contentDisplay="RIGHT" layoutX="63.5" layoutY="143.0" prefHeight="31.0" prefWidth="271.0" style="-fx-background-color: transparent;" styleClass="CreatePostLabel" stylesheets="@styles.css" text="Code" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="64.0" layoutY="288.0" prefHeight="30.0" prefWidth="400.0" style="-fx-background-color: transparent;" styleClass="CreatePostLabel" stylesheets="@styles.css" text="Language" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <StackPane fx:id="stackPane" layoutX="272.5" layoutY="424.0" prefHeight="74.0" prefWidth="109.0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="235.0" styleClass="normal_box2" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.ContributionSingleController">
+   <children>
+      <ImageView fx:id="ContributionImage" fitHeight="39.0" fitWidth="44.0" layoutX="35.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="ContributionUser" layoutX="91.0" layoutY="14.0" prefHeight="22.0" prefWidth="134.0" text="Label" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <padding>
+      <Insets left="5.0" right="5.0" />
+   </padding>
+</AnchorPane>

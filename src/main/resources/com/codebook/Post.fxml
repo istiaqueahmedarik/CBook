@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="900.0" style="-fx-background-radius: 10;" styleClass="Post" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.SinglePostController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="8.0" prefHeight="260.0" prefWidth="886.0" styleClass="post" stylesheets="@styles.css">
+         <children>
+            <BorderPane fx:id="detailed" layoutX="15.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="258.0" prefWidth="871.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+               <top>
+                  <AnchorPane prefHeight="40.0" prefWidth="778.0" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="PostPic" fitHeight="27.0" fitWidth="27.0" layoutX="21.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/2.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Label fx:id="PostTitle" layoutX="63.0" layoutY="7.0" prefHeight="19.0" prefWidth="792.0" stylesheets="@styles.css" text="This is Title" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="editBtn" layoutX="737.0" layoutY="7.0" mnemonicParsing="false" styleClass="update_button" stylesheets="@styles.css" text="Update" />
+                        <Button fx:id="deleteBtn" layoutX="803.0" layoutY="7.0" mnemonicParsing="false" onAction="#deletePost" styleClass="delete-button" stylesheets="@styles.css" text="Delete" />
+                     </children>
+                  </AnchorPane>
+               </top>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <center>
+                  <AnchorPane prefHeight="220.0" prefWidth="879.0" style="-fx-text-fill: red;" styleClass="Post" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="PostCode" layoutX="26.0" layoutY="11.0" prefHeight="174.0" prefWidth="796.0" styleClass="Post" stylesheets="@styles.css" text="Label" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Label>
+                        <Button fx:id="likeNumber" layoutX="57.0" layoutY="190.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: transparent;" text="20K" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/love.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="downloadNumbers" layoutX="409.0" layoutY="190.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="38.0" style="-fx-background-color: transparent;" text="10K" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="397.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/download.png" />
+                           </image>
+                        </ImageView>
+                        <StackPane fx:id="stackPane" layoutX="311.0" layoutY="42.0" prefHeight="123.0" prefWidth="200.0" />
+                        <ImageView fitHeight="22.0" fitWidth="78.0" layoutX="671.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/add1.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="add" layoutX="669.0" layoutY="189.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="25.0" style="-fx-background-color: transparent;" stylesheets="@styles.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+       
+      </AnchorPane>
+   </children>
+</AnchorPane>

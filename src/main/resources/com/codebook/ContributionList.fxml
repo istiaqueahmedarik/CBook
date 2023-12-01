@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="250.0" style="-fx-background-color: #0e0e0e; -fx-border-radius: 10; -fx-border-color: #65eef5; -fx-background-radius: 10; -fx-border-width: 3;" styleClass="normal_box2" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.ContribtuionController">
+   <children>
+      <Label alignment="CENTER" prefHeight="41.0" prefWidth="250.0" text="Contribution List" textFill="#65eef5">
+         <font>
+            <Font name="Consolas Bold" size="15.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="5.0" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="240.0" styleClass="scroll_pane" stylesheets="@styles.css">
+         <content>
+            <VBox fx:id="contributions" alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="250.0" spacing="10.0">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

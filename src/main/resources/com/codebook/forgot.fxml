@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1519.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.ResetPassController">
+   <children>
+      <ImageView fitHeight="787.0" fitWidth="1526.0" layoutX="-3.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/bg1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="374.0" layoutY="90.5" prefHeight="602.0" prefWidth="771.0">
+         <children>
+            <Label layoutX="17.0" layoutY="57.0" text="Can't remember your password?" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="46.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="84.0" layoutY="152.0" prefHeight="44.0" prefWidth="596.0" promptText="Email" styleClass="normal_box" stylesheets="@styles.css">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="bt" layoutX="85.0" layoutY="226.0" mnemonicParsing="false" onAction="#resetPass" prefHeight="41.0" prefWidth="595.0" styleClass="default_button" stylesheets="@styles.css" text="Send Email">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="256.0" layoutY="294.0" text="Remember password?" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="462.0" layoutY="292.0" onMouseClicked="#goToLogin" text="Login" textFill="#2e0de7" underline="true">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="warning" alignment="CENTER" layoutX="91.0" layoutY="359.0" prefHeight="18.0" prefWidth="592.0" textFill="RED">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <StackPane fx:id="stackPane" layoutX="320.0" layoutY="340.0" prefHeight="100.0" prefWidth="131.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

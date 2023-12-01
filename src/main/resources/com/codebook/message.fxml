@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="900.0" style="-fx-background-color: #222327; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.MessengerController">
+   <children>
+      <ScrollPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="66.0" prefWidth="900.0" style="-fx-background-radius: 10;" styleClass="scroll_pane" stylesheets="@styles.css">
+         <content>
+          <AnchorPane maxHeight="-Infinity" prefHeight="63.0" prefWidth="898.0" style="-fx-background-color: #222327;">
+               <children>
+                  <HBox fx:id="FriendsList" prefHeight="62.0" prefWidth="0.0" spacing="5.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutY="66.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="207.0" styleClass="scroll_pane" stylesheets="@styles.css">
+        <content>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="206.0">
+               <children>
+                  <VBox fx:id="MessageList" layoutX="-1.0" layoutY="-2.0" prefHeight="0.0" prefWidth="270.0" spacing="10.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Line endX="900.0000610351562" endY="66.39999389648438" startX="-0.20000813901424408" startY="64.79999542236328" />
+      <ScrollPane fx:id="scrollPaneChat" layoutX="206.0" layoutY="117.0" prefHeight="498.0" prefWidth="688.0" styleClass="scroll_pane" stylesheets="@styles.css">
+        <content>
+          <AnchorPane prefHeight="498.0" prefWidth="684.0">
+               <children>
+                  <VBox fx:id="messagebox1" layoutX="19.0" layoutY="11.0" prefWidth="250.0" spacing="5.0" />
+                  <VBox fx:id="messagebox2" alignment="TOP_RIGHT" layoutX="408.0" layoutY="14.0" prefWidth="250.0" spacing="5.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextField fx:id="MessageTextBox" layoutX="220.0" layoutY="628.0" prefHeight="34.0" prefWidth="609.0" styleClass="normal_box" stylesheets="@styles.css" visible="false" />
+      <Button fx:id="SendMsg" layoutX="839.0" layoutY="628.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="51.0" styleClass="default_button" stylesheets="@styles.css" text="Send" visible="false" />
+      <Line endX="193.09288024902344" endY="57.10710144042969" layoutX="10.0" layoutY="10.0" startX="193.09288024902344" startY="660.0" />
+      <AnchorPane layoutX="217.0" layoutY="67.0" prefHeight="46.0" prefWidth="683.0" style="-fx-background-color: #222327; -fx-background-radius: 10;">
+         <children>
+            <Circle fx:id="CurrentImage" fill="DODGERBLUE" layoutX="33.0" layoutY="23.0" radius="19.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+            <Label fx:id="CurrentChatName" layoutX="59.0" layoutY="15.0" prefHeight="18.0" prefWidth="312.0" text="Name" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Line endX="475.60003662109375" endY="-3.5999984741210938" layoutX="424.0" layoutY="117.0" startX="-220.40711975097656" startY="-3.600006103515625" />
+   </children>
+</AnchorPane>

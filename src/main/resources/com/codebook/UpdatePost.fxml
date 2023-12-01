@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="532.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #111c1c 0% , #1e6a64 50%, #020605 100%); -fx-background-radius: 14;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.UpdateController">
+   <children>
+      <Label layoutX="67.0" layoutY="70.0" prefHeight="47.0" prefWidth="378.0" text="Update Your Info" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="123.0" prefHeight="27.0" prefWidth="399.0" text="Update your media coverage" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Label>
+      <Button defaultButton="true" layoutX="64.0" layoutY="432.0" mnemonicParsing="false" onAction="#Update" prefHeight="40.0" prefWidth="404.0" styleClass="default_button" stylesheets="@styles.css" text="Update" textFill="#1903e7">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Name" layoutX="64.0" layoutY="179.0" prefHeight="34.0" prefWidth="404.0" promptText="Name" styleClass="username_pass_text_area" stylesheets="@styles.css" />
+      <TextField fx:id="LinkedIn" layoutX="64.0" layoutY="231.0" prefHeight="34.0" prefWidth="404.0" promptText="LinkedIn" styleClass="username_pass_text_area" stylesheets="@styles.css" />
+      <TextField fx:id="Github" layoutX="64.0" layoutY="283.0" prefHeight="34.0" prefWidth="404.0" promptText="Github" styleClass="username_pass_text_area" stylesheets="@styles.css" />
+      <StackPane fx:id="stackPane" layoutX="215.0" layoutY="477.0" prefHeight="66.0" prefWidth="82.0" />
+      <Label fx:id="warning" alignment="CENTER" layoutX="80.0" layoutY="510.0" prefHeight="54.0" prefWidth="388.0" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CF" layoutX="64.0" layoutY="327.0" prefHeight="34.0" prefWidth="404.0" promptText="CodeForces" styleClass="username_pass_text_area" stylesheets="@styles.css" />
+      <TextField fx:id="CC" layoutX="64.0" layoutY="377.0" prefHeight="34.0" prefWidth="404.0" promptText="CodeChef" styleClass="username_pass_text_area" stylesheets="@styles.css" />
+   </children>
+</AnchorPane>

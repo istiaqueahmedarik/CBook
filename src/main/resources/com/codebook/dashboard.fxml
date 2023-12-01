@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1519.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.SceneController">
+   <children>
+      <ImageView fitHeight="795.0" fitWidth="1522.0" layoutX="-1.0" layoutY="-2.0" opacity="0.42" pickOnBounds="true">
+         <image>
+            <Image url="@images/22.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="322.0" style="-fx-background-color: #0e0e0e; -fx-background-radius: 10; -fx-border-color: #65eef5; -fx-border-radius: 10; -fx-border-width: 3;">
+         <children>
+            <AnchorPane cache="true" layoutX="4.0" layoutY="75.0" prefHeight="435.0" prefWidth="307.0">
+               <children>
+                  <Button layoutX="49.0" layoutY="7.0" mnemonicParsing="false" onAction="#changeToHome" prefHeight="50.0" prefWidth="214.0" styleClass="h-btn" stylesheets="@styles.css" text="Home" textFill="WHITE" />
+                  <ImageView fitHeight="23.0" fitWidth="21.0" layoutX="109.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/home_gray.png" />
+                     </image>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ImageView>
+                  <Button layoutX="49.0" layoutY="66.0" mnemonicParsing="false" onAction="#changeToProfile" prefHeight="50.0" prefWidth="214.0" styleClass="h-btn" stylesheets="@styles.css" text="Profile" textFill="WHITE" />
+                  <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="111.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/profile.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="49.0" layoutY="185.0" mnemonicParsing="false" onAction="#changeToMonalisa" prefHeight="50.0" prefWidth="214.0" styleClass="h-btn" stylesheets="@styles.css" text="ChatBot" textFill="WHITE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="101.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/q&amp;a.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="49.0" layoutY="244.0" mnemonicParsing="false" onAction="#changeToContestReminder" prefHeight="50.0" prefWidth="214.0" styleClass="h-btn" stylesheets="@styles.css" text="Contest Reminder" textFill="WHITE" />
+                  <ImageView fitHeight="24.0" fitWidth="28.0" layoutX="60.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/remider.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="49.0" layoutY="303.0" mnemonicParsing="false" onAction="#changeToResource" prefHeight="50.0" prefWidth="214.0" styleClass="h-btn" stylesheets="@styles.css" text="Cp Resouces" textFill="WHITE" />
+                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="87.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/resource.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="49.0" layoutY="362.0" mnemonicParsing="false" onAction="#changeToCart" prefHeight="50.0" prefWidth="214.0" styleClass="h-btn" stylesheets="@styles.css" text="Download PDF" textFill="WHITE" />
+                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="78.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/download.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="102.60000610351562" endY="-0.600006103515625" layoutX="147.0" layoutY="116.0" startX="-88.33334350585938" startY="-0.600006103515625" stroke="#54c2c8" />
+                  <Line endX="102.60000610351562" endY="-0.600006103515625" layoutX="147.0" layoutY="235.0" startX="-88.33334350585938" startY="-0.600006103515625" stroke="#54c2c8" />
+                  <Line endX="102.60000610351562" endY="-0.600006103515625" layoutX="147.0" layoutY="294.0" startX="-88.33334350585938" startY="-0.600006103515625" stroke="#54c2c8" />
+                  <Line endX="102.60000610351562" endY="-0.600006103515625" layoutX="147.0" layoutY="353.0" startX="-88.33334350585938" startY="-0.600006103515625" stroke="#54c2c8" />
+                  <Line endX="102.60000610351562" endY="-0.600006103515625" layoutX="147.0" layoutY="412.0" startX="-88.33334350585938" startY="-0.600006103515625" stroke="#54c2c8" />
+                  <Button layoutX="48.0" layoutY="127.0" mnemonicParsing="false" onAction="#changeToMsg" prefHeight="50.0" prefWidth="214.0" styleClass="h-btn" stylesheets="@styles.css" text="KothaBarta" textFill="WHITE" />
+                  <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="94.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/messenger.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="102.60000610351562" endY="-0.600006103515625" layoutX="149.0" layoutY="58.0" startX="-88.33334350585938" startY="-0.600006103515625" stroke="#54c2c8" />
+                  <Line endX="102.60000610351562" endY="-0.600006103515625" layoutX="147.0" layoutY="177.0" startX="-88.33334350585938" startY="-0.600006103515625" stroke="#54c2c8" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="100.0" layoutY="510.0" mnemonicParsing="false" onAction="#signOut" prefHeight="32.0" prefWidth="102.0" styleClass="signout-btn" stylesheets="@styles.css" text="Sign Out" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <StackPane fx:id="stackPane2" layoutX="54.0" layoutY="5.0" prefHeight="36.0" prefWidth="218.0" />
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="scrollPane" layoutX="342.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="697.0" prefWidth="946.0" style="-fx-background-radius: 10;" styleClass="scroll_pane" stylesheets="@styles.css">
+         <content>
+            <AnchorPane prefHeight="697.0" prefWidth="946.0">
+               <children>
+                  <StackPane fx:id="loading" layoutX="323.0" layoutY="224.0" prefHeight="168.0" prefWidth="194.0" visible="false" />
+                  <VBox fx:id="post" prefHeight="691.0" prefWidth="946.0" spacing="10.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane fx:id="contribution" layoutX="1268.0" layoutY="71.0" prefHeight="440.0" prefWidth="250.0" styleClass="scroll_pane" stylesheets="@styles.css" />
+      <ImageView fitHeight="66.0" fitWidth="277.0" layoutX="9.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/codebook1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="1321.0" layoutY="14.0" onMouseClicked="#changeToProfile" prefHeight="50.0" style="-fx-background-radius: 30; -fx-background-color: #18191A;">
+         <children>
+            <Label fx:id="TopUsername" layoutX="43.0" layoutY="1.0" prefHeight="46.0" prefWidth="83.0" text="Arik" textFill="#65eef5">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+            </Label>
+            <Circle fx:id="TopCir" fill="DODGERBLUE" layoutX="160.0" layoutY="25.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="338.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="926.0" style="-fx-background-color: #18191A; -fx-background-radius: 25; -fx-border-color: #65eef5; -fx-border-width: 3; -fx-border-radius: 25;">
+         <children>
+            <TextField fx:id="SearchText" layoutX="16.0" layoutY="10.0" prefHeight="26.0" prefWidth="851.0" promptText="Search" styleClass="normal_box3" stylesheets="@styles.css">
+               <font>
+                  <Font name="Consolas" size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="SearchIcon" layoutX="860.0" layoutY="2.0" mnemonicParsing="false" onAction="#goToSearch" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="78.0" onMouseClicked="#goToSearch" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/search33.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1269.0" layoutY="518.0" prefHeight="238.0" prefWidth="250.0" style="-fx-background-color: #0e0e0e; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #65eef5; -fx-border-width: 3;">
+         <children>
+            <Label alignment="CENTER" layoutX="9.0" layoutY="22.0" prefHeight="27.0" prefWidth="231.0" text="🅳🅴🆅🅴🅻🅾🅿🅴🆁🆂" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="25.0" layoutY="59.0" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: #242526; -fx-background-radius: 30;">
+               <children>
+                  <Circle fx:id="developer1" fill="DODGERBLUE" layoutX="181.0" layoutY="25.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="22.0" layoutY="17.0" prefHeight="18.0" prefWidth="134.0" text="Istiaque Ahmed Arik" textFill="#65eef5">
+                     <font>
+                        <Font name="Consolas Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="27.0" layoutY="115.0" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: #242526; -fx-background-radius: 30;">
+               <children>
+                  <Circle fx:id="developer11" fill="DODGERBLUE" layoutX="181.0" layoutY="25.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="22.0" layoutY="16.0" prefHeight="18.0" prefWidth="134.0" text=" Raisul Islam Rahad" textFill="#65eef5">
+                     <font>
+                        <Font name="Consolas Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="25.0" layoutY="173.0" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: #242526; -fx-background-radius: 30;">
+               <children>
+                  <Circle fx:id="developer12" fill="DODGERBLUE" layoutX="181.0" layoutY="25.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="37.0" layoutY="17.0" prefHeight="18.0" prefWidth="118.0" text="Sadia Jahan Moon" textFill="#65eef5">
+                     <font>
+                        <Font name="Consolas Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

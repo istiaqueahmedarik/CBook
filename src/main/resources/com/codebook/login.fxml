@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="819.0" prefWidth="1519.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.LoginController">
+   <top>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="821.0" prefWidth="1526.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="823.0" fitWidth="1533.0" layoutX="2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/login_bg.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="345.0" layoutY="119.0" opacity="0.4" prefHeight="581.0" prefWidth="835.0" style="-fx-background-color: black; -fx-background-radius: 20;" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="345.0" AnchorPane.rightAnchor="346.0" AnchorPane.topAnchor="119.0" />
+            <GridPane layoutX="350.0" layoutY="121.0" opacity="0.74" prefHeight="574.0" prefWidth="840.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #111c11 0% , #1e6a64 50% , #020605 100%); -fx-background-radius: 20;" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Welcome To CodeBook" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Baskerville Old Face" size="60.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="email" maxHeight="50.0" maxWidth="350.0" prefHeight="43.0" prefWidth="310.0" promptText="Email" styleClass="username_pass_text_area" stylesheets="@styles.css" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="BOTTOM_CENTER" onMouseClicked="#resetPass" prefHeight="23.0" prefWidth="450.0" text="Forgot Password?" textFill="#55beff" underline="true" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Consolas Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Button maxHeight="50.0" maxWidth="323.0" mnemonicParsing="false" onAction="#login" prefHeight="50.0" prefWidth="323.0" styleClass="default_button" stylesheets="@styles.css" text="Log in" textFill="#5200ff" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="41.0" prefWidth="456.0" text="Don't have a account?" textFill="WHITE" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Consolas" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" onMouseClicked="#signup" prefHeight="20.0" prefWidth="454.0" text="Sign up" textFill="#5099ff" underline="true" GridPane.rowIndex="8">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Consolas Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="warning" alignment="CENTER" prefHeight="32.0" prefWidth="491.0" textFill="#ec0404" visible="true" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Consolas" size="22.0" />
+                     </font>
+                  </Label>
+                  <StackPane fx:id="stackPane" prefHeight="78.0" prefWidth="311.0" GridPane.rowIndex="9" />
+                  <AnchorPane prefHeight="58.0" prefWidth="588.0" GridPane.rowIndex="4">
+                     <children>
+                        <PasswordField fx:id="password" layoutX="237.0" layoutY="5.0" maxHeight="50.0" maxWidth="351.0" prefHeight="47.0" prefWidth="351.0" promptText="Password" styleClass="username_pass_text_area" stylesheets="@styles.css">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

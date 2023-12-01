@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="229.0" prefWidth="600.0" style="-fx-background-color: #242526; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebook.AddAdminController">
+   <children>
+      <TextField fx:id="username" layoutX="113.0" layoutY="90.0" prefHeight="27.0" prefWidth="416.0" promptText="Username" styleClass="normal_box2" stylesheets="@styles.css" />
+      <Button fx:id="submitAdmin" layoutX="269.0" layoutY="144.0" mnemonicParsing="false" onAction="#addAdmin" styleClass="default_button" stylesheets="@styles.css" text="Add" />
+   </children>
+</AnchorPane>

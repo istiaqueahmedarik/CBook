@@ -2,6 +2,30 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "codebook/com.codebook.Main",
+      "projectName": "codebook",
+      "vmArgs": "--module-path D:/Software/openjfx-21.0.1_windows-x64_bin-sdk/javafx-sdk-21.0.1/lib --add-modules javafx.controls,javafx.fxml",
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "CODEBOOK/com.codebook.Main",
+      "projectName": "codebook",
+      "vmArgs": "--module-path D:/Software/openjfx-21.0.1_windows-x64_bin-sdk/javafx-sdk-21.0.1/lib --add-modules javafx.controls,javafx.fxml",
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "com.codebook.Main",
+      "projectName": "codebook",
+      "vmArgs": "--module-path D:/Software/openjfx-21.0.1_windows-x64_bin-sdk/javafx-sdk-21.0.1/lib --add-modules javafx.controls,javafx.fxml",
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",

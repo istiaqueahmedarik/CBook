@@ -337,7 +337,9 @@ public class Methods {
     docRef.delete();
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest
-      .delete("https://qsipezvuqaentfjlwfpc.supabase.co/rest/v1/documents")
+      .delete(
+        System.getProperty("CODEBOOK_SUPABASE_BASE_URL") + "/rest/v1/documents"
+      )
       .header("apikey", "Bearer " + CODEBOOK_SUPABASE_API_KEY)
       .header("Content-Type", "application/json")
       .body("{\"id\":\"" + id + "\"}")
@@ -409,7 +411,8 @@ public class Methods {
       "}";
     HttpResponse<String> response = Unirest
       .patch(
-        "https://qsipezvuqaentfjlwfpc.supabase.co/rest/v1/documents?id=" +
+        System.getProperty("CODEBOOK_SUPABASE_BASE_URL") +
+        "/rest/v1/documents?id=" +
         post.id
       )
       .header("apikey", "Bearer " + CODEBOOK_SUPABASE_API_KEY)
@@ -1067,16 +1070,12 @@ public class Methods {
     // System.out.println(req);
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest
-      .post("https://qsipezvuqaentfjlwfpc.supabase.co/rest/v1/documents")
-      .header(
-        "Authorization",
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFzaXBlenZ1cWFlbnRmamx3ZnBjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDAzOTgxODksImV4cCI6MjAxNTk3NDE4OX0.1-a64iv-XydhhOyGI2mFZc3hNuB3Rl_v8jKP4GWjzFA"
+      .post(
+        System.getProperty("CODEBOOK_SUPABASE_BASE_URL") + "/rest/v1/documents"
       )
+      .header("Authorization", "Bearer " + CODEBOOK_SUPABASE_API_KEY)
       .header("Content-Type", "application/json")
-      .header(
-        "apiKey",
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFzaXBlenZ1cWFlbnRmamx3ZnBjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDAzOTgxODksImV4cCI6MjAxNTk3NDE4OX0.1-a64iv-XydhhOyGI2mFZc3hNuB3Rl_v8jKP4GWjzFA"
-      )
+      .header("apiKey", CODEBOOK_SUPABASE_API_KEY)
       .body(req)
       .asString();
     System.out.println(response.getBody().toString());
@@ -1099,17 +1098,12 @@ public class Methods {
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest
       .post(
-        "https://qsipezvuqaentfjlwfpc.supabase.co/rest/v1/rpc/match_documents"
+        System.getProperty("CODEBOOK_SUPABASE_BASE_URL") +
+        "/rest/v1/rpc/match_documents"
       )
-      .header(
-        "Authorization",
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFzaXBlenZ1cWFlbnRmamx3ZnBjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDAzOTgxODksImV4cCI6MjAxNTk3NDE4OX0.1-a64iv-XydhhOyGI2mFZc3hNuB3Rl_v8jKP4GWjzFA"
-      )
+      .header("Authorization", "Bearer " + CODEBOOK_SUPABASE_API_KEY)
       .header("Content-Type", "application/json")
-      .header(
-        "apiKey",
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFzaXBlenZ1cWFlbnRmamx3ZnBjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDAzOTgxODksImV4cCI6MjAxNTk3NDE4OX0.1-a64iv-XydhhOyGI2mFZc3hNuB3Rl_v8jKP4GWjzFA"
-      )
+      .header("apiKey", CODEBOOK_SUPABASE_API_KEY)
       .body(req)
       .asString();
     System.out.println(response.getBody().toString());

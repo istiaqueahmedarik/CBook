@@ -61,7 +61,7 @@
         <dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.28</version>
+			<version>1.18.30</version>
 		</dependency>
 
         
@@ -70,11 +70,7 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.15.2</version>
 		</dependency>
-        <dependency>
-    <groupId>org.fxmisc.richtext</groupId>
-    <artifactId>richtextfx</artifactId>
-    <version>0.10.4</version> <!-- Replace with the latest version -->
-</dependency>
+        
 
       
 
@@ -106,6 +102,42 @@
     </dependencies>
     <build>
         <plugins>
+<plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-shade-plugin</artifactId>
+               <version>3.2.4</version>
+               <executions>
+                   <execution>
+                       <goals>
+                           <goal>shade</goal>
+                       </goals>
+                       <configuration>
+
+                               <filters>
+                                   <filter>
+                                       <artifact>*:*</artifact>
+                                       <excludes>
+                                           <exclude>META-INF/*.SF</exclude>
+                                           <exclude>META-INF/*.DSA</exclude>
+                                           <exclude>META-INF/*.RSA</exclude>
+                                       </excludes>
+                                   </filter>
+                               </filters>
+                               <!-- Additional configuration. -->
+
+
+                           <shadedArtifactAttached>true</shadedArtifactAttached>
+                           <transformers>
+                               <transformer
+                  implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer"
+                >
+                                   <mainClass>com.codebook.Main</mainClass>
+                               </transformer>
+                           </transformers>
+                       </configuration>
+                   </execution>
+               </executions>
+           </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
